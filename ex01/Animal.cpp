@@ -6,7 +6,7 @@
 /*   By: rorollin <rorollin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/03 16:00:20 by rorollin          #+#    #+#             */
-/*   Updated: 2026/03/03 16:35:01 by rorollin         ###   ########.fr       */
+/*   Updated: 2026/03/03 18:12:04 by rorollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,4 +54,8 @@ std::string	Animal::getType() const
 void	Animal::makeSound() const
 {
 	std::cout << "An animal must have a type to make noise!\n";
+}
+Brain	*Animal::getBrain()
+{
+	return (NULL);
 }

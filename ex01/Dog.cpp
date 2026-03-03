@@ -6,7 +6,7 @@
 /*   By: rorollin <rorollin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/03 16:07:24 by rorollin          #+#    #+#             */
-/*   Updated: 2026/03/03 17:59:47 by rorollin         ###   ########.fr       */
+/*   Updated: 2026/03/03 18:09:28 by rorollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ Dog::Dog(std::string type)
 	(void) type;
 	std::cout << "Paramatrized Dog Constructor called.\n";
 	_type = "Dog";
+	_brain = new Brain();
 }
 
 Dog::Dog(const Dog &other) : _brain(NULL)

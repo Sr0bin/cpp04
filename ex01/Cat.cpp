@@ -6,7 +6,7 @@
 /*   By: rorollin <rorollin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/03 16:02:18 by rorollin          #+#    #+#             */
-/*   Updated: 2026/03/03 18:07:11 by rorollin         ###   ########.fr       */
+/*   Updated: 2026/03/03 18:09:29 by rorollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ Cat::Cat(std::string type)
 	(void) type;
 	std::cout << "Paramatrized Cat Constructor called.\n";
 	_type = "Cat";
+	_brain = new Brain();
 }
 
 Cat::Cat(const Cat &other) : _brain(NULL)

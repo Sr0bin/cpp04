@@ -6,7 +6,7 @@
 /*   By: rorollin <rorollin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/03 15:44:02 by rorollin          #+#    #+#             */
-/*   Updated: 2026/03/03 16:51:06 by rorollin         ###   ########.fr       */
+/*   Updated: 2026/03/03 18:11:42 by rorollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ public:
 	virtual ~Animal(void);
 	virtual void makeSound() const;
 	std::string getType() const;
-	virtual Brain *getBrain() = 0;
+	virtual Brain *getBrain();
 
 protected:
 	std::string _type;

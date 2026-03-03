@@ -6,7 +6,7 @@
 /*   By: rorollin <rorollin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/03 16:06:40 by rorollin          #+#    #+#             */
-/*   Updated: 2026/03/03 16:48:42 by rorollin         ###   ########.fr       */
+/*   Updated: 2026/03/03 18:09:47 by rorollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ public:
 	Dog &operator=(const Dog &other);
 	~Dog(void);
 	void makeSound() const;
-	virtual Brain *getBrain();
+	Brain *getBrain();
 
 private:
 	Brain	*_brain;

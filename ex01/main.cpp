@@ -6,7 +6,7 @@
 /*   By: rorollin <rorollin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/02 18:14:17 by rorollin          #+#    #+#             */
-/*   Updated: 2026/03/03 18:07:32 by rorollin         ###   ########.fr       */
+/*   Updated: 2026/03/03 18:11:42 by rorollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,9 @@ int main()
 		std::cout << "-----------------------\n";
 		std::cout << "First brain set.\n";
 		std::cout << "-----------------------\n";
+
 		*array[limitDogCat + 1] = *array[limitDogCat];
+
 		tempBrain = array[limitDogCat]->getBrain();
 		{
 			std::cout << tempBrain->getIdea(0) << std::endl;
