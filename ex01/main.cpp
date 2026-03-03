@@ -6,7 +6,7 @@
 /*   By: rorollin <rorollin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/02 18:14:17 by rorollin          #+#    #+#             */
-/*   Updated: 2026/03/03 18:11:42 by rorollin         ###   ########.fr       */
+/*   Updated: 2026/03/03 18:13:25 by rorollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,18 +65,18 @@ int main()
 	}
 	std::cout << "-----------------------\n";
 	{
-		Dog dogA;
-		Dog dogB(dogA);
+		Dog *dogA = new Dog();
+		Dog dogB(*dogA);
 		Dog dogC;
 
 		Brain *tempBrain;
-		tempBrain = dogA.getBrain();
+		tempBrain = dogA->getBrain();
 		tempBrain->setIdea(0, "Waf");
 		tempBrain = dogB.getBrain();
 		tempBrain->setIdea(0, "Wouf");
 		tempBrain = dogC.getBrain();
 		tempBrain->setIdea(0, "Wuf");
-		tempBrain = dogA.getBrain();
+		tempBrain = dogA->getBrain();
 		std::cout << "-----------------------\n";
 		std::cout << "Dog A : \n";
 		std::cout << "-----------------------\n";
@@ -105,10 +105,8 @@ int main()
 		std::cout << "Dog B after: \n";
 		std::cout << "-----------------------\n";
 		std::cout << tempBrain->getIdea(0) << std::endl;
-
-
+		delete dogA;
 	}
-
 
 	return 0;
 }
