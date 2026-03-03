@@ -6,7 +6,7 @@
 #    By: rorollin <rorollin@student.42lyon.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/19 15:44:49 by rorollin          #+#    #+#              #
-#    Updated: 2026/02/26 17:11:34 by rorollin         ###   ########.fr        #
+#    Updated: 2026/03/03 16:15:53 by rorollin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ NAME = animal
 
 SOURCES_DIR = .
 
-SOURCES_NAME = main.cpp
+SOURCES_NAME = main.cpp Animal.cpp Dog.cpp Cat.cpp WrongCat.cpp WrongAnimal.cpp
 
 #---------------------------
 
