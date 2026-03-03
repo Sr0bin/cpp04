@@ -6,7 +6,7 @@
 /*   By: rorollin <rorollin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/02 18:14:17 by rorollin          #+#    #+#             */
-/*   Updated: 2026/03/03 16:18:14 by rorollin         ###   ########.fr       */
+/*   Updated: 2026/03/03 18:02:02 by rorollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,9 @@ int main()
 		delete i;
 		delete j;
 	}
+
 	std::cout << "-----------------------\n";
+
 	{
 		const WrongAnimal* meta = new WrongAnimal();
 		const WrongAnimal* i = new WrongCat();
@@ -41,7 +43,6 @@ int main()
 		meta->makeSound();
 		delete meta;
 		delete i;
-
 	}
 	return 0;
 }

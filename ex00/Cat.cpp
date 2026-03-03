@@ -6,7 +6,7 @@
 /*   By: rorollin <rorollin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/03 16:02:18 by rorollin          #+#    #+#             */
-/*   Updated: 2026/03/03 16:11:57 by rorollin         ###   ########.fr       */
+/*   Updated: 2026/03/03 17:31:04 by rorollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,14 +37,14 @@ Cat &Cat::operator=(const Cat &other)
 	std::cout << "Cat Assignment Constructor called.\n";
 	if (this != &other)
 	{
-		*this = other;
+		Animal::operator=(other);
 	}
 	return (*this);
 }
 
 Cat::~Cat(void)
 {
-	std::cout << "Default Cat Destructor called.\n";
+	std::cout << "Cat Destructor called.\n";
 }
 
 void	Cat::makeSound() const

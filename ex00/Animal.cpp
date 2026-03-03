@@ -6,7 +6,7 @@
 /*   By: rorollin <rorollin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/03 16:00:20 by rorollin          #+#    #+#             */
-/*   Updated: 2026/03/03 16:10:58 by rorollin         ###   ########.fr       */
+/*   Updated: 2026/03/03 16:35:01 by rorollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ Animal &Animal::operator=(const Animal &other)
 
 Animal::~Animal(void)
 {
-	std::cout << "Default Animal Destructor called.\n";
+	std::cout << "Animal Destructor called.\n";
 }
 
 std::string	Animal::getType() const

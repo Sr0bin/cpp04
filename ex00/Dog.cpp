@@ -6,7 +6,7 @@
 /*   By: rorollin <rorollin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/03 16:07:24 by rorollin          #+#    #+#             */
-/*   Updated: 2026/03/03 16:12:05 by rorollin         ###   ########.fr       */
+/*   Updated: 2026/03/03 17:31:04 by rorollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,14 +36,14 @@ Dog &Dog::operator=(const Dog &other)
 	std::cout << "Dog Assignment Constructor called.\n";
 	if (this != &other)
 	{
-		*this = other;
+		Animal::operator=(other);
 	}
 	return (*this);
 }
 
 Dog::~Dog(void)
 {
-	std::cout << "Default Dog Destructor called.\n";
+	std::cout << "Dog Destructor called.\n";
 }
 
 void	Dog::makeSound() const

@@ -6,7 +6,7 @@
 /*   By: rorollin <rorollin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/03 16:02:18 by rorollin          #+#    #+#             */
-/*   Updated: 2026/03/03 16:13:14 by rorollin         ###   ########.fr       */
+/*   Updated: 2026/03/03 17:32:46 by rorollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,14 +37,14 @@ WrongCat &WrongCat::operator=(const WrongCat &other)
 	std::cout << "WrongCat Assignment Constructor called.\n";
 	if (this != &other)
 	{
-		*this = other;
+		WrongAnimal::operator=(other);
 	}
 	return (*this);
 }
 
 WrongCat::~WrongCat(void)
 {
-	std::cout << "Default WrongCat Destructor called.\n";
+	std::cout << "WrongCat Destructor called.\n";
 }
 
 void	WrongCat::makeSound() const
