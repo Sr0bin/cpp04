@@ -6,7 +6,7 @@
 /*   By: rorollin <rorollin@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/02 18:14:17 by rorollin          #+#    #+#             */
-/*   Updated: 2026/03/03 18:13:25 by rorollin         ###   ########.fr       */
+/*   Updated: 2026/03/03 18:22:47 by rorollin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 #include "Cat.hpp"
 #include "Dog.hpp"
 
-#include "WrongAnimal.hpp"
-#include "WrongCat.hpp"
 
 int main()
 {
@@ -43,7 +41,7 @@ int main()
 
 		*array[limitDogCat + 1] = *array[limitDogCat];
 
-		tempBrain = array[limitDogCat]->getBrain();
+		tempBrain = array[limitDogCat + 1]->getBrain();
 		{
 			std::cout << tempBrain->getIdea(0) << std::endl;
 			tempBrain->setIdea(0, "Waf waf");
